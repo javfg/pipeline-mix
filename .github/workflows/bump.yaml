@@ -32,6 +32,6 @@ jobs:
 
       - name: Bump, tag and push
         run: |
-          git config user.name "release-bot[bot]"
-          git config user.email "release-bot[bot]@users.noreply.github.com"
+          git config user.name "opentargets-gitbot[bot]"
+          git config user.email "opentargets-gitbot[bot]@users.noreply.github.com"
           uv run ./scripts/pr.py
