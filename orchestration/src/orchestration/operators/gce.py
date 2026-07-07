@@ -83,6 +83,8 @@ def wait_for_extended_operation(
 
     result = operation.result(timeout=timeout)
 
+    log.info('hi')
+
     if operation.error_code:
         log.error(
             f'Error during {verbose_name}: [Code: {operation.error_code}]: {operation.error_message}',
