@@ -129,6 +129,8 @@ def main():
     else:
         datasets = list_folders_in_directory(args.dataset_folder)
 
+    logger.info('hi')
+
     metadata = PlatformOutputMetadata(
         ftp_location=args.ftp_location,
         datasets=datasets,
