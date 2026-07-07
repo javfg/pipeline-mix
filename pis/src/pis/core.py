@@ -15,6 +15,7 @@ def main() -> None:
     s = asyncio.run(runner.run())
 
     logger.info('hi')
+    logger.info('hi again')
 
     if s.manifest.result not in [Result.PENDING, Result.SUCCESS]:
         logger.error(f'step {s.name} failed')
