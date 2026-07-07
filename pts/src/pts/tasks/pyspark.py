@@ -71,6 +71,8 @@ class Pyspark(Task):
         self.srcs = make_absolute(self.spec.source, self.context.config)
         self.dsts = make_absolute(self.spec.destination, self.context.config)
 
+        logger.info('HI IM A PYSpark TASK')
+
         logger.info(f'source paths: {self.srcs}')
         logger.info(f'destination paths: {self.dsts}')
         logger.info(f'settings: {self.spec.settings}')
