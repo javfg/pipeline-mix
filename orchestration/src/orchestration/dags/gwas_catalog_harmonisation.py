@@ -28,6 +28,7 @@ with DAG(
     default_args=shared_dag_args,
     **shared_dag_kwargs,
 ) as dag:
+    logger.info('hi')
     index_config = find_node_in_config(config['nodes'], 'generate_sumstat_index')
     harmonisation_config = find_node_in_config(config['nodes'], 'gwas_catalog_harmonisation')
 
