@@ -130,6 +130,7 @@ def main():
         datasets = list_folders_in_directory(args.dataset_folder)
 
     logger.info('hi')
+    logger.info('hi again')
 
     metadata = PlatformOutputMetadata(
         ftp_location=args.ftp_location,
