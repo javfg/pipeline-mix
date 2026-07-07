@@ -124,6 +124,8 @@ class Solr(Task):
             ),
         )
 
+        logger.info('hi')
+
         h = StorageHandle(self.dst, self.context.config)
         dst = h.open('wb')
 
