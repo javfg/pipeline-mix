@@ -54,6 +54,7 @@ with DAG(
     }),
 ) as dag:
     logger = logging.getLogger(__name__)
+    logger.info('HI')
     config = UnifiedPipelineConfig()
     steps: dict[str, dict[str, Any]] = {}  # this is a registry of tasks, it is used to build dependencies
 
